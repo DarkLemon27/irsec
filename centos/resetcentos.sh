@@ -10,6 +10,17 @@ userdel -r -f higherup
 userdel -r -f dataminer
 userdel -r -f babysitter
 
+groupdel principal
+groupdel chaperone
+groupdel deejay
+groupdel kid_with_sweatpants
+groupdel prom_king
+groupdel prom_queen
+groupdel dbadmin
+groupdel higherup
+groupdel dataminer
+groupdel babysitter
+
 useradd principal
 useradd chaperone
 useradd deejay
