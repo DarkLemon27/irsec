@@ -1,11 +1,12 @@
-net user principal newpassword
-net user chaperone newpassword
-net user deejay newpassword
-net user kid_with_sweatpants newpassword 
-net user prom_king newpassword
-net user prom_queen newpassword
-net user dbadmin newpassword
+net user principal newpassword123
+net user chaperone newpassword123
+net user deejay newpassword123
+net user kid_with_sweatpants newpassword123
+net user prom_king newpassword123
+net user prom_queen newpassword123
+net user dbadmin newpassword123
 
-net user -Name principal -Rename newBoi
-net user -Name chaperone -Rename newBoiChaperone
-net user -Name dbadmin -Rename newBoiDbadmin
+Rename-LocalUser -Name principal -NewName newBoiPrincipal
+Rename-LocalUser -Name chaperone -NewName newBoiChaperone
+Rename-LocalUser -Name dbadmin -NewName newBoiDbadmin
+
