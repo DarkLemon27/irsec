@@ -86,5 +86,10 @@ iptables -A OUTPUT -j DROP
 
 
 
+sleep 10
+
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -F
 
 
