@@ -1,5 +1,5 @@
 $pass = Read-Host -Prompt 'NewPass'
-$confirmation = Read-Host "Change display names (not login names)?(y/n) "
+$confirmation = Read-Host "Change usernames?(y/n) "
 
 net user principal $pass
 net user chaperone $pass
@@ -8,9 +8,6 @@ net user kid_with_sweatpants $pass
 net user prom_king $pass
 net user prom_queen $pass
 net user dbadmin $pass
-
-
-
 if($confirmation -eq 'y'){
 Rename-LocalUser -Name principal -NewName newBoiPrincipal
 Rename-LocalUser -Name chaperone -NewName newBoiChaperone
