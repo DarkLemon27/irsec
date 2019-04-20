@@ -1,23 +1,11 @@
 #!/bin/bash
 
-
-
-
-
-#!/bin/bash
-
 # If not root, break and require root
 if [ `whoami` != root ]; then
   echo Script requires root to run
   exit
 fi
 
-firewall-cmd --permanent --add-service http
-firewall-cmd --permanent --add-service https
-firewall-cmd --permanent --add-service mysql
-firewall-cmd --permanent --add-service kerberos
-firewall-cmd --permanent --add-service ldap
-firewall-cmd --permanent --add-service ldaps
 
 # Flush old rules
 iptables -F
